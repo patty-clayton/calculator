@@ -1,0 +1,69 @@
+
+body {
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+    --color1: hsla(349, 69%, 76%, 1);
+    --color2: hsla(207, 67%, 44%, 1);
+    --color3: hsla(200, 61%, 56%, 1);
+    --color4: hsla(187, 41%, 94%, 1);
+    --color5: hsla(170, 28%, 95%, 1);
+
+    --header-height: 60px;
+    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --gutter: 30px;
+    --footer-height: 25px;
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--color4);
+}
+
+main {
+    display: flex;
+    flex-direction: column;    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(var(--header-height));
+    margin-bottom: calc(var(--footer-height));
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color3);
+    height: var(--header-height);
+    box-shadow: var(--shadow);
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+input {
+    margin: 20px;
+}
+
+.result {
+    border: 1px solid black;
+    border-radius: 1mm;
+    line-height: 18px;
+    min-width: 75px;
+    height: 21px;
+    text-align: center;
+    vertical-align: middle;
+}
+  
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+}
