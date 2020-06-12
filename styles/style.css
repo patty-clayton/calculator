@@ -26,6 +26,15 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
+section {
+    display: flex;
+    flex-direction: column;    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color5);
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -38,9 +47,14 @@ header {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 input {
